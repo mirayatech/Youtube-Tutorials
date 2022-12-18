@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium&display=swap");
+
+:root {
+  --white-color: #fff;
+  --neon-green: #64feda;
+  --slate-green: #1b2e4a;
+  --dark-green: #0a192f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--dark-green);
+  font-family: "Oxanium", cursive;
+}
+
+div {
+  position: relative;
+}
+
+div input {
+  color: var(--white-color);
+  background-color: transparent;
+  font-size: 16px;
+  padding: 16px 19px;
+  min-width: 385px;
+  border-radius: 4px;
+  border: 2px solid var(--neon-green);
+}
+
+div input::selection {
+  background-color: var(--neon-green);
+}
+
+div label {
+  color: var(--white-color);
+  position: absolute;
+  font-size: 16px;
+  user-select: none;
+  top: -10px;
+  font-weight: 600;
+  left: 15px;
+  padding: 2px 5px;
+  background-color: var(--dark-green);
+}
+
+button {
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  user-select: none;
+  margin-top: 20px;
+  padding: 16px;
+  min-width: 385px;
+  border-radius: 4px;
+  border: none;
+  color: var(--dark-green);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* image */
+img {
+  width: 60px;
+  margin-bottom: 80px;
+  animation: key 2s ease-in-out infinite alternate;
+  animation-timing-function: linear;
+  transform-origin: bottom;
+  user-select: none;
+}
+
+@keyframes key {
+  from {
+    transform: translateY(1.5);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
